@@ -1901,18 +1901,71 @@ document.querySelectorAll('.scroll-reveal').forEach((el, i) => {
   observer.observe(el);
 });
 
-// Form submit handler
-function handleSubmit() {
-  const name = document.getElementById('name').value;
-  const phone = document.getElementById('phone').value;
+// ─────────────────────────────────────────────
+// FORM SUBMISSION — powered by Formspree
+// Replace YOUR_FORM_ID below with the ID from
+// your Formspree dashboard (e.g. "xpwzgkla")
+// ─────────────────────────────────────────────
+const FORMSPREE_ID = 'xgopobwg';
+
+async function handleSubmit() {
+  const name    = document.getElementById('name').value.trim();
+  const phone   = document.getElementById('phone').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const service = document.getElementById('service').value;
+  const vehicle = document.getElementById('vehicle').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Basic validation
   if (!name || !phone) {
-    alert('Please enter your name and phone number so we can reach you!');
+    showFormError('Please enter your name and phone number so we can reach you.');
     return;
   }
+
   const btn = document.querySelector('.form__submit');
-  btn.textContent = '✓ Request Sent! We\'ll Call You Soon.';
-  btn.style.background = 'var(--green)';
+  btn.textContent = 'Sending…';
   btn.disabled = true;
+
+  try {
+    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name, phone, email, service, vehicle, message,
+        _subject: `New Quote Request from ${name} — Low Price Auto Glass` })
+    });
+
+    if (res.ok) {
+      // Success state
+      btn.textContent = '✓ Sent! We\'ll Call You Soon.';
+      btn.style.background = 'var(--green)';
+      btn.style.color = 'white';
+      document.querySelector('.form__note').textContent =
+        'Your request was received. Expect a call or email within a few hours.';
+      // Clear the fields
+      ['name','phone','email','vehicle','message'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('service').value = '';
+    } else {
+      const data = await res.json();
+      throw new Error(data?.errors?.[0]?.message || 'Submission failed');
+    }
+  } catch (err) {
+    btn.textContent = 'Send My Quote Request';
+    btn.disabled = false;
+    showFormError('Something went wrong. Please call us directly at (831) 633-3338.');
+    console.error('Form error:', err);
+  }
+}
+
+function showFormError(msg) {
+  let el = document.getElementById('form-error');
+  if (!el) {
+    el = document.createElement('p');
+    el.id = 'form-error';
+    el.style.cssText = 'color:#EF4444;font-size:0.88rem;margin-top:10px;text-align:center;font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;';
+    document.querySelector('.form__note').after(el);
+  }
+  el.textContent = msg;
+  setTimeout(() => el.textContent = '', 6000);
 }
 
 // Smooth scroll for nav links

@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Low Price Auto Glass Specialist — Serving Monterey County since 1999. Windshield replacement from $175, door glass, mirrors. Open 7 days. Call (831) 633-3338.">
+<title>Low Price Auto Glass Specialist | Moss Landing, CA | (831) 633-3338</title>
+
+<!-- Schema.org Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Low Price Auto Glass Specialist",
+  "image": "",
+  "telephone": "+18316333338",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "516 Dolan Rd",
+    "addressLocality": "Moss Landing",
+    "addressRegion": "CA",
+    "postalCode": "95039",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.8065,
+    "longitude": -121.7882
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "15:00"
+    }
+  ],
+  "priceRange": "$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "120"
+  }
+}
+</script>
+
+<style>
+/* =============================================
+   FONTS
+   ============================================= */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap');
+
+/* =============================================
+   DESIGN TOKENS
+   ============================================= */
+:root {
+  --amber: #F59E0B;
+  --amber-light: #FCD34D;
+  --amber-dark: #B45309;
+  --steel: #0F1923;
+  --steel-mid: #1A2637;
+  --steel-light: #243447;
+  --steel-border: #2D4060;
+  --white: #FFFFFF;
+  --off-white: #F0F4F8;
+  --muted: #8FA3BE;
+  --danger: #EF4444;
+  --green: #22C55E;
+
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+
+  --radius: 4px;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.35);
+  --shadow-glow: 0 0 40px rgba(245,158,11,0.2);
+}
+
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--steel);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* =============================================
+   UTILITY
+   ============================================= */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; }
+.section--tight { padding: 48px 0; }
+.text-amber { color: var(--amber); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* =============================================
+   STICKY PHONE BAR (Mobile)
+   ============================================= */
+.sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  background: var(--amber);
+  color: var(--steel);
+  text-align: center;
+  padding: 14px;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+}
+.sticky-cta a { color: var(--steel); display: flex; align-items: center; justify-content: center; gap: 10px; }
+@media (max-width: 767px) { .sticky-cta { display: block; } }
+
+/* =============================================
+   NAVIGATION
+   ============================================= */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15,25,35,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--steel-border);
+}
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav__logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+.nav__logo span { color: var(--amber); }
+.nav__links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav__links a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.nav__links a:hover { color: var(--white); }
+.nav__phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--amber);
+  color: var(--steel);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+.nav__phone:hover { background: var(--amber-light); }
+@media (max-width: 900px) {
+  .nav__links { display: none; }
+}
+@media (max-width: 600px) {
+  .nav__logo { font-size: 1.1rem; }
+  .nav__phone { padding: 9px 14px; font-size: 0.85rem; }
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--steel);
+}
+
+/* Diagonal geometric background */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; right: -10%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--steel-mid) 0%, var(--steel-light) 100%);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+/* Amber accent diagonal */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 38%;
+  width: 4px;
+  height: 100%;
+  background: var(--amber);
+  transform: skewX(-6deg);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245,158,11,0.12);
+  border: 1px solid rgba(245,158,11,0.3);
+  color: var(--amber);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 6px 14px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  animation: fadeUp 0.6s ease both;
+}
+
+.hero__headline {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  animation: fadeUp 0.7s ease 0.1s both;
+}
+.hero__headline em {
+  font-style: normal;
+  color: var(--amber);
+  display: block;
+}
+
+.hero__sub {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin-top: 20px;
+  max-width: 480px;
+  line-height: 1.65;
+  animation: fadeUp 0.7s ease 0.2s both;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s ease 0.3s both;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 16px 28px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+.btn--primary {
+  background: var(--amber);
+  color: var(--steel);
+}
+.btn--primary:hover {
+  background: var(--amber-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245,158,11,0.35);
+}
+.btn--outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--steel-border);
+}
+.btn--outline:hover {
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+.hero__trust {
+  display: flex;
+  gap: 28px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s ease 0.4s both;
+}
+.hero__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.hero__trust-item svg { color: var(--amber); flex-shrink: 0; }
+
+/* Price cards on right side */
+.hero__prices {
+  display: grid;
+  gap: 14px;
+  animation: fadeUp 0.7s ease 0.5s both;
+}
+.price-card {
+  background: var(--steel-mid);
+  border: 1px solid var(--steel-border);
+  border-radius: 6px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.price-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--amber);
+}
+.price-card:hover {
+  border-color: rgba(245,158,11,0.4);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-glow);
+}
+.price-card__icon {
+  width: 48px; height: 48px;
+  background: rgba(245,158,11,0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.price-card__info { flex: 1; }
+.price-card__label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.price-card__desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.price-card__amount {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--amber);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.price-card__amount sup {
+  font-size: 1rem;
+  vertical-align: super;
+  font-weight: 700;
+}
+
+.hero__book-note {
+  margin-top: 14px;
+  padding: 14px 20px;
+  background: rgba(34,197,94,0.08);
+  border: 1px solid rgba(34,197,94,0.2);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero::before { width: 100%; clip-path: none; opacity: 0.4; }
+  .hero::after { display: none; }
+}
+
+/* =============================================
+   TRUST BAR
+   ============================================= */
+.trust-bar {
+  background: var(--amber);
+  padding: 0;
+  overflow: hidden;
+}
+.trust-bar__inner {
+  display: flex;
+  align-items: stretch;
+  max-width: 100%;
+}
+.trust-bar__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 20px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--steel);
+  border-right: 1px solid rgba(15,25,35,0.15);
+  text-align: center;
+}
+.trust-bar__item:last-child { border-right: none; }
+.trust-bar__item svg { flex-shrink: 0; }
+@media (max-width: 700px) {
+  .trust-bar__inner { flex-wrap: wrap; }
+  .trust-bar__item { width: 50%; flex: none; border-bottom: 1px solid rgba(15,25,35,0.15); }
+  .trust-bar__item:nth-child(even) { border-right: none; }
+}
+
+/* =============================================
+   SERVICES SECTION
+   ============================================= */
+.services { background: var(--steel-mid); }
+.section__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.section__eyebrow {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--amber);
+  margin-bottom: 12px;
+}
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+.section__desc {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: var(--steel);
+  border: 1px solid var(--steel-border);
+  border-radius: 8px;
+  padding: 36px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  border-color: rgba(245,158,11,0.3);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+.service-card:hover::after { transform: scaleX(1); }
+.service-card__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 4rem;
+  color: rgba(245,158,11,0.08);
+  line-height: 1;
+  position: absolute;
+  top: 16px; right: 24px;
+  letter-spacing: -0.05em;
+}
+.service-card__icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+.service-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.service-card__desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+.service-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.service-card__price-num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--amber);
+  line-height: 1;
+}
+.service-card__price-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.service-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  color: var(--amber);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: gap 0.2s;
+}
+.service-card:hover .service-card__cta { gap: 10px; }
+
+/* =============================================
+   WHY US
+   ============================================= */
+.why {
+  background: var(--steel);
+  position: relative;
+  overflow: hidden;
+}
+.why::before {
+  content: '';
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245,158,11,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.why__left {}
+.why__features {
+  display: grid;
+  gap: 24px;
+  margin-top: 40px;
+}
+.why__feature {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.why__feature-icon {
+  width: 48px; height: 48px;
+  background: rgba(245,158,11,0.1);
+  border: 1px solid rgba(245,158,11,0.2);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.3rem;
+}
+.why__feature-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+.why__feature-desc {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.why__right {
+  display: grid;
+  gap: 16px;
+}
+.stat-card {
+  background: var(--steel-mid);
+  border: 1px solid var(--steel-border);
+  border-radius: 8px;
+  padding: 32px;
+  position: relative;
+}
+.stat-card__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: var(--amber);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.stat-card__label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.stat-card__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+@media (max-width: 800px) {
+  .why__grid { grid-template-columns: 1fr; gap: 48px; }
+  .stat-card__grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* =============================================
+   REVIEWS
+   ============================================= */
+.reviews { background: var(--steel-mid); }
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 48px;
+}
+.review-card {
+  background: var(--steel);
+  border: 1px solid var(--steel-border);
+  border-radius: 8px;
+  padding: 28px;
+  transition: all 0.25s;
+}
+.review-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245,158,11,0.2);
+  box-shadow: var(--shadow-card);
+}
+.review-card__stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 14px;
+  color: var(--amber);
+  font-size: 1rem;
+}
+.review-card__text {
+  color: var(--off-white);
+  font-size: 0.97rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.review-card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.review-card__avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--steel-light);
+  border: 2px solid var(--steel-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--amber);
+  flex-shrink: 0;
+}
+.review-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.review-card__source {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.reviews__cta {
+  text-align: center;
+  margin-top: 48px;
+}
+.reviews__cta p {
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.reviews__platforms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.reviews__platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--steel);
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+  padding: 10px 20px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--amber);
+  transition: all 0.2s;
+}
+.reviews__platform:hover { border-color: var(--amber); }
+
+/* =============================================
+   HOURS + LOCATION
+   ============================================= */
+.location { background: var(--steel); }
+.location__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.location__card {
+  background: var(--steel-mid);
+  border: 1px solid var(--steel-border);
+  border-radius: 8px;
+  padding: 40px;
+}
+.location__card-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.location__card-title span { color: var(--amber); font-size: 1.5rem; }
+
+.hours-table { width: 100%; }
+.hours-table tr { border-bottom: 1px solid var(--steel-border); }
+.hours-table tr:last-child { border-bottom: none; }
+.hours-table td {
+  padding: 12px 0;
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+.hours-table td:first-child {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+.hours-table td:last-child {
+  text-align: right;
+  color: var(--muted);
+}
+.hours-open { color: var(--green) !important; font-weight: 700 !important; }
+
+.location__address {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.location__address strong { color: var(--white); font-weight: 700; }
+
+.location__phones { display: grid; gap: 12px; margin-bottom: 24px; }
+.location__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--amber);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+.location__phone:hover { color: var(--amber-light); }
+
+.map-placeholder {
+  margin-top: 20px;
+  background: var(--steel-light);
+  border: 1px solid var(--steel-border);
+  border-radius: 6px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  overflow: hidden;
+  position: relative;
+}
+.map-placeholder iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(0.6) contrast(1.1);
+}
+
+@media (max-width: 800px) {
+  .location__grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   FAQ
+   ============================================= */
+.faq { background: var(--steel-mid); }
+.faq__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 48px;
+}
+.faq-item {
+  background: var(--steel);
+  border: 1px solid var(--steel-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.faq-item__q {
+  width: 100%;
+  padding: 22px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  text-align: left;
+  transition: color 0.2s;
+}
+.faq-item__q:hover { color: var(--amber); }
+.faq-item__icon {
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  border: 1.5px solid var(--steel-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--amber);
+  transition: transform 0.2s;
+}
+.faq-item.open .faq-item__icon { transform: rotate(45deg); }
+.faq-item__a {
+  padding: 0 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s;
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+.faq-item.open .faq-item__a {
+  max-height: 200px;
+  padding-bottom: 22px;
+}
+@media (max-width: 800px) {
+  .faq__grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   CTA SECTION
+   ============================================= */
+.cta-section {
+  background: var(--amber);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255,255,255,0.04) 10px,
+    rgba(255,255,255,0.04) 20px
+  );
+}
+.cta-section__inner { position: relative; z-index: 1; }
+.cta-section__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  text-transform: uppercase;
+  color: var(--steel);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.cta-section__sub {
+  font-size: 1.15rem;
+  color: rgba(15,25,35,0.7);
+  margin-bottom: 36px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-section__phones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.cta-section__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--steel);
+  color: var(--white);
+  padding: 16px 32px;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.2s;
+}
+.cta-section__phone:hover {
+  background: var(--steel-mid);
+  transform: translateY(-2px);
+  color: var(--amber);
+}
+.cta-section__note {
+  font-size: 0.88rem;
+  color: rgba(15,25,35,0.6);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* =============================================
+   CONTACT FORM
+   ============================================= */
+.contact { background: var(--steel); }
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: start;
+}
+.contact__info-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.contact__info-desc {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.contact__info-list {
+  display: grid;
+  gap: 18px;
+}
+.contact__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.contact__info-icon {
+  width: 40px; height: 40px;
+  background: rgba(245,158,11,0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact__info-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.contact__info-value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.form {
+  background: var(--steel-mid);
+  border: 1px solid var(--steel-border);
+  border-radius: 8px;
+  padding: 40px;
+}
+.form__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 28px;
+}
+.form__group { margin-bottom: 18px; }
+.form__label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.form__input,
+.form__select,
+.form__textarea {
+  width: 100%;
+  background: var(--steel);
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+}
+.form__input:focus,
+.form__select:focus,
+.form__textarea:focus {
+  border-color: var(--amber);
+}
+.form__input::placeholder,
+.form__textarea::placeholder { color: var(--muted); }
+.form__textarea { resize: vertical; min-height: 110px; }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form__submit {
+  width: 100%;
+  background: var(--amber);
+  color: var(--steel);
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+.form__submit:hover {
+  background: var(--amber-light);
+  transform: translateY(-2px);
+}
+.form__note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .contact__grid { grid-template-columns: 1fr; }
+  .form__row { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  background: var(--steel-mid);
+  border-top: 1px solid var(--steel-border);
+  padding: 48px 0 80px;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.footer__logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+.footer__logo span { color: var(--amber); }
+.footer__desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.footer__heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--amber);
+  margin-bottom: 16px;
+}
+.footer__links {
+  display: grid;
+  gap: 10px;
+}
+.footer__links a {
+  font-size: 0.92rem;
+  color: var(--muted);
+  transition: color 0.2s;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.footer__links a:hover { color: var(--white); }
+.footer__bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 20px 24px 0;
+  border-top: 1px solid var(--steel-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer__copy {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 700px) {
+  .footer__inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+}
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =============================================
+   MOBILE PADDING FOR STICKY CTA
+   ============================================= */
+@media (max-width: 767px) {
+  .footer { padding-bottom: 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="tel:+18316333338">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    TAP TO CALL — (831) 633-3338
+  </a>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="nav__inner">
+    <div class="nav__logo">
+      <span>Low Price</span> Auto Glass<br>
+      <small style="font-size:0.65rem;color:var(--muted);font-weight:600;letter-spacing:0.1em;">SPECIALIST — MOSS LANDING, CA</small>
+    </div>
+    <div class="nav__links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#location">Hours</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="tel:+18316333338" class="nav__phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      (831) 633-3338
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__content">
+    <div class="hero__left">
+      <div class="hero__badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        5-Star Rated · Serving Monterey County Since 1999
+      </div>
+      <h1 class="hero__headline">
+        Auto Glass<br>
+        <em>You Can<br>Afford.</em>
+      </h1>
+      <p class="hero__sub">Windshields, door glass, and mirrors replaced fast and right. We've served Monterey County for 25+ years with the best prices around — open 7 days a week.</p>
+      <div class="hero__actions">
+        <a href="tel:+18316333338" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call for Free Quote
+        </a>
+        <a href="#services" class="btn btn--outline">View Pricing</a>
+      </div>
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          5-Star Yelp & Google
+        </div>
+        <div class="hero__trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Open 7 Days
+        </div>
+        <div class="hero__trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          25+ Years Experience
+        </div>
+      </div>
+    </div>
+    <div class="hero__right">
+      <div class="hero__prices">
+        <a href="tel:+18316333338" class="price-card">
+          <div class="price-card__icon">🪟</div>
+          <div class="price-card__info">
+            <div class="price-card__label">Windshield Replacement</div>
+            <div class="price-card__desc">New OEM windshield — safety first</div>
+          </div>
+          <div class="price-card__amount"><sup>$</sup>175</div>
+        </a>
+        <a href="tel:+18316333338" class="price-card">
+          <div class="price-card__icon">🚗</div>
+          <div class="price-card__info">
+            <div class="price-card__label">Car Door Glass</div>
+            <div class="price-card__desc">Side windows, quarter glass</div>
+          </div>
+          <div class="price-card__amount"><sup>$</sup>120</div>
+        </a>
+        <a href="tel:+18616333338" class="price-card">
+          <div class="price-card__icon">🪞</div>
+          <div class="price-card__info">
+            <div class="price-card__label">Side Mirror Replacement</div>
+            <div class="price-card__desc">Glass and housing options</div>
+          </div>
+          <div class="price-card__amount"><sup>$</sup>90</div>
+        </a>
+        <div class="hero__book-note">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z"/></svg>
+          <span>Prices shown — no hidden fees. Call to confirm for your vehicle.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar__inner">
+    <div class="trust-bar__item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+      5-Star Rated
+    </div>
+    <div class="trust-bar__item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Open 7 Days a Week
+    </div>
+    <div class="trust-bar__item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      In Business Since 1999
+    </div>
+    <div class="trust-bar__item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      Guaranteed Best Price
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section__header scroll-reveal">
+      <div class="section__eyebrow">What We Do</div>
+      <h2 class="section__title">Our Services &<br>Transparent Pricing</h2>
+      <p class="section__desc">No games, no surprises. Here's what we charge — and why we've been Monterey County's go-to glass shop for over 25 years.</p>
+    </div>
+    <div class="services__grid">
+      <div class="service-card scroll-reveal">
+        <div class="service-card__num">01</div>
+        <div class="service-card__icon">🪟</div>
+        <div class="service-card__title">Windshield Replacement</div>
+        <p class="service-card__desc">We use new windshields — not used — because your safety depends on it. Our windshields meet or exceed OEM safety standards with professional installation.</p>
+        <div class="service-card__price">
+          <span class="service-card__price-num">$175</span>
+          <span class="service-card__price-label">Starting Price</span>
+        </div>
+        <a href="tel:+18316333338" class="service-card__cta">
+          Call to Book →
+        </a>
+      </div>
+      <div class="service-card scroll-reveal">
+        <div class="service-card__num">02</div>
+        <div class="service-card__icon">🚘</div>
+        <div class="service-card__title">Car Door Glass</div>
+        <p class="service-card__desc">Side windows, rear windows, and quarter glass replaced quickly. We carry a vast inventory of quality used glass to keep your costs low without sacrificing quality.</p>
+        <div class="service-card__price">
+          <span class="service-card__price-num">$120</span>
+          <span class="service-card__price-label">Starting Price</span>
+        </div>
+        <a href="tel:+18316333338" class="service-card__cta">
+          Call to Book →
+        </a>
+      </div>
+      <div class="service-card scroll-reveal">
+        <div class="service-card__num">03</div>
+        <div class="service-card__icon">🪞</div>
+        <div class="service-card__title">Side Mirror Replacement</div>
+        <p class="service-card__desc">Broken or clipped side mirror? We'll get you seeing clearly again fast. Mirror glass and full housing options available for most makes and models.</p>
+        <div class="service-card__price">
+          <span class="service-card__price-num">$90</span>
+          <span class="service-card__price-label">Starting Price</span>
+        </div>
+        <a href="tel:+18316333338" class="service-card__cta">
+          Call to Book →
+        </a>
+      </div>
+      <div class="service-card scroll-reveal" style="border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.04);">
+        <div class="service-card__num">+</div>
+        <div class="service-card__icon">📞</div>
+        <div class="service-card__title">Don't See Your Service?</div>
+        <p class="service-card__desc">We work on all types of auto glass. Rear windows, vent glass, sunroofs — if it's glass on your vehicle, we can likely help. Call us for a fast, free quote.</p>
+        <a href="tel:+18316333338" class="btn btn--primary" style="margin-top: 24px; display: inline-flex;">
+          Call (831) 633-3338
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why section" id="about">
+  <div class="container">
+    <div class="why__grid">
+      <div class="why__left scroll-reveal">
+        <div class="section__eyebrow">Why Choose Us</div>
+        <h2 class="section__title" style="text-align:left;">Monterey's Most Trusted Glass Shop</h2>
+        <div class="why__features">
+          <div class="why__feature">
+            <div class="why__feature-icon">💰</div>
+            <div>
+              <div class="why__feature-title">Genuinely Low Prices</div>
+              <p class="why__feature-desc">Our name says it all. We maintain a huge inventory of quality used glass so we can offer prices that nobody in the area can beat.</p>
+            </div>
+          </div>
+          <div class="why__feature">
+            <div class="why__feature-icon">🛡️</div>
+            <div>
+              <div class="why__feature-title">New Windshields Only</div>
+              <p class="why__feature-desc">We use used glass where it's safe — but windshields are always new, because your safety on the road is non-negotiable.</p>
+            </div>
+          </div>
+          <div class="why__feature">
+            <div class="why__feature-icon">📅</div>
+            <div>
+              <div class="why__feature-title">Open Every Day</div>
+              <p class="why__feature-desc">Mon–Sat 9am to 5pm, Sunday 9am to 3pm. Glass doesn't break on a schedule, so neither do we.</p>
+            </div>
+          </div>
+          <div class="why__feature">
+            <div class="why__feature-icon">📍</div>
+            <div>
+              <div class="why__feature-title">Easy to Find</div>
+              <p class="why__feature-desc">Located at 516 Dolan Rd in Moss Landing, right next to Pick n Pull. Serving all of Monterey County and surrounding areas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why__right scroll-reveal">
+        <div class="stat-card__grid">
+          <div class="stat-card">
+            <div class="stat-card__num">25+</div>
+            <div class="stat-card__label">Years Serving Monterey County</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">5★</div>
+            <div class="stat-card__label">Rated on Google & Yelp</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">7</div>
+            <div class="stat-card__label">Days Open Every Week</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">$90</div>
+            <div class="stat-card__label">Prices Starting From</div>
+          </div>
+        </div>
+        <div class="stat-card" style="margin-top: 16px;">
+          <p style="color: var(--muted); font-size: 1rem; line-height: 1.7;">
+            "With a vast inventory of affordable used glass — and new windshields for safety — we've been Monterey County's most trusted auto glass shop since 1999. Come see why our customers keep coming back."
+          </p>
+          <p style="margin-top: 14px; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber);">— The Team at Low Price Auto Glass</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews section" id="reviews">
+  <div class="container">
+    <div class="section__header scroll-reveal">
+      <div class="section__eyebrow">Customer Reviews</div>
+      <h2 class="section__title">What Monterey County<br>Is Saying</h2>
+    </div>
+    <div class="reviews__grid">
+      <div class="review-card scroll-reveal">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__text">"They replaced my windshield quickly and at a price nobody else could match. I've sent three family members here. These guys are the real deal for Monterey County."</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">M</div>
+          <div>
+            <div class="review-card__name">Maria J.</div>
+            <div class="review-card__source">⭐ Google Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card scroll-reveal">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__text">"Got a quote from three places. Low Price Auto Glass was $80 cheaper AND they fit me in the same day. Done in under an hour. Will never go anywhere else."</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">R</div>
+          <div>
+            <div class="review-card__name">Robert K.</div>
+            <div class="review-card__source">⭐ Yelp Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card scroll-reveal">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__text">"My car door window got smashed in. Called these guys first thing Sunday morning — they were open! Came in, got it fixed, back on the road in no time. Super professional."</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">T</div>
+          <div>
+            <div class="review-card__name">Teresa M.</div>
+            <div class="review-card__source">⭐ Google Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews__cta scroll-reveal">
+      <p>Read more of our reviews on:</p>
+      <div class="reviews__platforms">
+        <a href="https://www.google.com/search?q=Low+Price+Auto+Glass+Specialist+Moss+Landing" target="_blank" rel="noopener" class="reviews__platform">
+          🔍 Google Reviews
+        </a>
+        <a href="https://www.yelp.com/biz/low-price-auto-glass-specialist-moss-landing" target="_blank" rel="noopener" class="reviews__platform">
+          ⭐ Yelp Reviews
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS + LOCATION -->
+<section class="location section" id="location">
+  <div class="container">
+    <div class="section__header scroll-reveal">
+      <div class="section__eyebrow">Find Us</div>
+      <h2 class="section__title">Hours & Location</h2>
+    </div>
+    <div class="location__grid">
+      <div class="location__card scroll-reveal">
+        <div class="location__card-title">
+          <span>🕘</span> Business Hours
+        </div>
+        <table class="hours-table">
+          <tr>
+            <td>Monday</td>
+            <td class="hours-open">9:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td class="hours-open">9:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td class="hours-open">9:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td class="hours-open">9:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td class="hours-open">9:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td class="hours-open">9:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td class="hours-open">9:00 AM – 3:00 PM</td>
+          </tr>
+        </table>
+      </div>
+      <div class="location__card scroll-reveal">
+        <div class="location__card-title">
+          <span>📍</span> Our Location
+        </div>
+        <div class="location__address">
+          <strong>516 Dolan Rd</strong><br>
+          Moss Landing, CA 95039<br>
+          <span style="color: var(--amber); font-size: 0.9rem;">Next to Pick n Pull</span>
+        </div>
+        <div class="location__phones">
+          <a href="tel:+18316333338" class="location__phone">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            (831) 633-3338
+          </a>
+          <a href="tel:+18313843339" class="location__phone">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            (831) 384-3339
+          </a>
+        </div>
+        <div class="map-placeholder">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.0!2d-121.7882!3d36.8065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e41a1e4b5e8a7%3A0x1234567890abcdef!2s516+Dolan+Rd%2C+Moss+Landing%2C+CA+95039!5e0!3m2!1sen!2sus!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Low Price Auto Glass Specialist Map">
+          </iframe>
+          <span style="position: relative; z-index: 1;">📍 516 Dolan Rd, Moss Landing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="section__header scroll-reveal">
+      <div class="section__eyebrow">FAQ</div>
+      <h2 class="section__title">Common Questions</h2>
+    </div>
+    <div class="faq__grid">
+      <div class="faq-item scroll-reveal">
+        <button class="faq-item__q" onclick="toggleFAQ(this)">
+          Do you use new or used glass?
+          <div class="faq-item__icon">+</div>
+        </button>
+        <div class="faq-item__a">For windshields, we always use new glass — your front windshield is a critical safety component and we don't compromise on it. For other auto glass (doors, side windows, mirrors), we maintain a large inventory of quality used glass that keeps your cost down without sacrificing function.</div>
+      </div>
+      <div class="faq-item scroll-reveal">
+        <button class="faq-item__q" onclick="toggleFAQ(this)">
+          How long does installation take?
+          <div class="faq-item__icon">+</div>
+        </button>
+        <div class="faq-item__a">Most jobs are completed in under an hour. Windshield replacements typically require an additional cure time before driving, and we'll walk you through exactly what to expect when you bring your vehicle in.</div>
+      </div>
+      <div class="faq-item scroll-reveal">
+        <button class="faq-item__q" onclick="toggleFAQ(this)">
+          Do you work with insurance?
+          <div class="faq-item__icon">+</div>
+        </button>
+        <div class="faq-item__a">We recommend calling us directly to discuss your insurance situation. Many customers find our out-of-pocket prices are competitive with or lower than their insurance deductibles. We're happy to help you figure out the best option.</div>
+      </div>
+      <div class="faq-item scroll-reveal">
+        <button class="faq-item__q" onclick="toggleFAQ(this)">
+          What areas do you serve?
+          <div class="faq-item__icon">+</div>
+        </button>
+        <div class="faq-item__a">We're located in Moss Landing and primarily serve all of Monterey County, including Salinas, Seaside, Marina, Monterey, Pacific Grove, Carmel, and surrounding communities. Call us to confirm we can serve your area.</div>
+      </div>
+      <div class="faq-item scroll-reveal">
+        <button class="faq-item__q" onclick="toggleFAQ(this)">
+          Are you really open on Sundays?
+          <div class="faq-item__icon">+</div>
+        </button>
+        <div class="faq-item__a">Yes! We're open Sunday from 9am to 3pm. We know glass breakage doesn't wait for business hours, so we make ourselves available 7 days a week to get you taken care of.</div>
+      </div>
+      <div class="faq-item scroll-reveal">
+        <button class="faq-item__q" onclick="toggleFAQ(this)">
+          How do I get a quote?
+          <div class="faq-item__icon">+</div>
+        </button>
+        <div class="faq-item__a">The fastest way is to call us at (831) 633-3338 or (831) 384-3339 — we can usually give you a price in minutes. You can also use the contact form below and we'll get back to you quickly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-section__inner">
+      <h2 class="cta-section__title">Ready to Get<br>It Fixed?</h2>
+      <p class="cta-section__sub">Call us now for a free quote. Most jobs done same-day. Open 7 days a week.</p>
+      <div class="cta-section__phones">
+        <a href="tel:+18316333338" class="cta-section__phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (831) 633-3338
+        </a>
+        <a href="tel:+18313843339" class="cta-section__phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (831) 384-3339
+        </a>
+      </div>
+      <p class="cta-section__note">516 Dolan Rd, Moss Landing · Open Mon–Sat 9–5 · Sun 9–3</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__left scroll-reveal">
+        <div class="section__eyebrow">Get In Touch</div>
+        <h2 class="contact__info-title">Send Us a Message</h2>
+        <p class="contact__info-desc">Prefer to write? Fill out the form and we'll get back to you quickly. For the fastest response, call us directly.</p>
+        <div class="contact__info-list">
+          <div class="contact__info-item">
+            <div class="contact__info-icon">📍</div>
+            <div>
+              <div class="contact__info-label">Address</div>
+              <div class="contact__info-value">516 Dolan Rd, Moss Landing, CA 95039<br><small style="color:var(--muted);">Next to Pick n Pull</small></div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">📞</div>
+            <div>
+              <div class="contact__info-label">Phone</div>
+              <div class="contact__info-value">
+                <a href="tel:+18316333338" style="color:var(--amber);">(831) 633-3338</a><br>
+                <a href="tel:+18313843339" style="color:var(--amber);">(831) 384-3339</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">🕘</div>
+            <div>
+              <div class="contact__info-label">Hours</div>
+              <div class="contact__info-value">Mon–Sat: 9am–5pm<br>Sunday: 9am–3pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__right scroll-reveal">
+        <div class="form">
+          <div class="form__title">Get a Free Quote</div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Your Name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Phone Number</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="(831) 555-0000" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email Address</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="service">Service Needed</label>
+            <select class="form__select" id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>Windshield Replacement</option>
+              <option>Car Door Glass</option>
+              <option>Side Mirror Replacement</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="vehicle">Vehicle (Year/Make/Model)</label>
+            <input class="form__input" type="text" id="vehicle" name="vehicle" placeholder="e.g. 2018 Toyota Camry">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Tell Us More</label>
+            <textarea class="form__textarea" id="message" name="message" placeholder="Describe the damage or ask us anything…"></textarea>
+          </div>
+          <button type="button" class="form__submit" onclick="handleSubmit()">Send My Quote Request</button>
+          <p class="form__note">We respond within a few hours. For fastest service, call us directly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <div class="footer__logo"><span>Low Price</span> Auto Glass Specialist</div>
+      <p class="footer__desc">Proudly serving Monterey County and surrounding areas since 1999. Best prices, expert installation, open 7 days a week.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="tel:+18316333338" class="btn btn--primary" style="padding: 12px 20px; font-size: 0.9rem;">
+          Call Now
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__heading">Quick Links</div>
+      <div class="footer__links">
+        <a href="#services">Services & Pricing</a>
+        <a href="#about">About Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Hours & Location</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Get a Quote</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__heading">Our Services</div>
+      <div class="footer__links">
+        <a href="#services">Windshield Replacement — $175</a>
+        <a href="#services">Car Door Glass — $120</a>
+        <a href="#services">Side Mirror Replacement — $90</a>
+        <a href="tel:+18316333338">Other Auto Glass</a>
+      </div>
+      <div style="margin-top: 28px;">
+        <div class="footer__heading">Service Area</div>
+        <p style="color: var(--muted); font-size: 0.88rem; line-height: 1.65;">Moss Landing, Salinas, Seaside, Marina, Monterey, Pacific Grove, Carmel, Watsonville & all of Monterey County.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__copy">© 2025 Low Price Auto Glass Specialist. All rights reserved. · 516 Dolan Rd, Moss Landing, CA 95039</div>
+    <div class="footer__copy">
+      <a href="https://www.google.com/search?q=Low+Price+Auto+Glass+Specialist" target="_blank" style="color: var(--amber);">★ Leave Us a Review</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+// FAQ Toggle
+function toggleFAQ(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.scroll-reveal').forEach((el, i) => {
+  el.style.transitionDelay = `${(i % 4) * 0.08}s`;
+  observer.observe(el);
+});
+
+// Form submit handler
+function handleSubmit() {
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  if (!name || !phone) {
+    alert('Please enter your name and phone number so we can reach you!');
+    return;
+  }
+  const btn = document.querySelector('.form__submit');
+  btn.textContent = '✓ Request Sent! We\'ll Call You Soon.';
+  btn.style.background = 'var(--green)';
+  btn.disabled = true;
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
